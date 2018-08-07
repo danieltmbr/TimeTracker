@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E207AD092118FC2900E72F01 /* BalanceTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207AD082118FC2900E72F01 /* BalanceTracker.swift */; };
+		E207AD0B2119033000E72F01 /* Tracker+Dates.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207AD0A2119033000E72F01 /* Tracker+Dates.swift */; };
+		E207AD0D2119035E00E72F01 /* DateRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207AD0C2119035E00E72F01 /* DateRange.swift */; };
+		E207AD0F2119044A00E72F01 /* BalanceTracker+Dates.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207AD0E2119044A00E72F01 /* BalanceTracker+Dates.swift */; };
+		E207AD11211A2EDD00E72F01 /* GrouppedTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207AD10211A2EDD00E72F01 /* GrouppedTracker.swift */; };
+		E23ED98321165F9F00375059 /* Tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E23ED97A21165F9E00375059 /* Tracker.framework */; };
+		E23ED98821165F9F00375059 /* TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23ED98721165F9F00375059 /* TrackerTests.swift */; };
+		E23ED98A21165F9F00375059 /* Tracker.h in Headers */ = {isa = PBXBuildFile; fileRef = E23ED97C21165F9E00375059 /* Tracker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E23ED99421165FC700375059 /* TrackItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23ED99121165FC600375059 /* TrackItem.swift */; };
+		E23ED99521165FC700375059 /* Tracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23ED99221165FC600375059 /* Tracker.swift */; };
+		E23ED99621165FC700375059 /* Arithmetical.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23ED99321165FC700375059 /* Arithmetical.swift */; };
 		E26F858A2116599F00071F30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26F85892116599F00071F30 /* AppDelegate.swift */; };
 		E26F858C2116599F00071F30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26F858B2116599F00071F30 /* ViewController.swift */; };
 		E26F858F2116599F00071F30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E26F858D2116599F00071F30 /* Main.storyboard */; };
@@ -17,6 +28,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		E23ED98421165F9F00375059 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E26F857E2116599F00071F30 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E23ED97921165F9E00375059;
+			remoteInfo = Tracker;
+		};
 		E26F859B211659A200071F30 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E26F857E2116599F00071F30 /* Project object */;
@@ -33,7 +51,34 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		E26F85D821165A7A00071F30 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		E207AD082118FC2900E72F01 /* BalanceTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceTracker.swift; sourceTree = "<group>"; };
+		E207AD0A2119033000E72F01 /* Tracker+Dates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tracker+Dates.swift"; sourceTree = "<group>"; };
+		E207AD0C2119035E00E72F01 /* DateRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateRange.swift; sourceTree = "<group>"; };
+		E207AD0E2119044A00E72F01 /* BalanceTracker+Dates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BalanceTracker+Dates.swift"; sourceTree = "<group>"; };
+		E207AD10211A2EDD00E72F01 /* GrouppedTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrouppedTracker.swift; sourceTree = "<group>"; };
+		E23ED97A21165F9E00375059 /* Tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E23ED97C21165F9E00375059 /* Tracker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tracker.h; sourceTree = "<group>"; };
+		E23ED97D21165F9E00375059 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E23ED98221165F9F00375059 /* TrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E23ED98721165F9F00375059 /* TrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerTests.swift; sourceTree = "<group>"; };
+		E23ED98921165F9F00375059 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E23ED99121165FC600375059 /* TrackItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackItem.swift; sourceTree = "<group>"; };
+		E23ED99221165FC600375059 /* Tracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tracker.swift; sourceTree = "<group>"; };
+		E23ED99321165FC700375059 /* Arithmetical.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Arithmetical.swift; sourceTree = "<group>"; };
 		E26F85862116599F00071F30 /* TimeTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E26F85892116599F00071F30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E26F858B2116599F00071F30 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,9 +92,25 @@
 		E26F85A5211659A200071F30 /* TimeTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E26F85A9211659A200071F30 /* TimeTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTrackerUITests.swift; sourceTree = "<group>"; };
 		E26F85AB211659A200071F30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2F02E3421165E24005DBDC0 /* TrackerSample.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TrackerSample.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		E23ED97621165F9E00375059 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E23ED97F21165F9F00375059 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E23ED98321165F9F00375059 /* Tracker.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E26F85832116599F00071F30 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -74,9 +135,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E23ED97B21165F9E00375059 /* Tracker */ = {
+			isa = PBXGroup;
+			children = (
+				E23ED97C21165F9E00375059 /* Tracker.h */,
+				E23ED97D21165F9E00375059 /* Info.plist */,
+				E23ED99321165FC700375059 /* Arithmetical.swift */,
+				E207AD082118FC2900E72F01 /* BalanceTracker.swift */,
+				E207AD0E2119044A00E72F01 /* BalanceTracker+Dates.swift */,
+				E207AD0C2119035E00E72F01 /* DateRange.swift */,
+				E207AD10211A2EDD00E72F01 /* GrouppedTracker.swift */,
+				E23ED99221165FC600375059 /* Tracker.swift */,
+				E207AD0A2119033000E72F01 /* Tracker+Dates.swift */,
+				E23ED99121165FC600375059 /* TrackItem.swift */,
+			);
+			path = Tracker;
+			sourceTree = "<group>";
+		};
+		E23ED98621165F9F00375059 /* TrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				E23ED98721165F9F00375059 /* TrackerTests.swift */,
+				E23ED98921165F9F00375059 /* Info.plist */,
+			);
+			path = TrackerTests;
+			sourceTree = "<group>";
+		};
 		E26F857D2116599F00071F30 = {
 			isa = PBXGroup;
 			children = (
+				E26F85E121165B2C00071F30 /* Samples */,
+				E23ED97B21165F9E00375059 /* Tracker */,
+				E23ED98621165F9F00375059 /* TrackerTests */,
 				E26F85882116599F00071F30 /* TimeTracker */,
 				E26F859D211659A200071F30 /* TimeTrackerTests */,
 				E26F85A8211659A200071F30 /* TimeTrackerUITests */,
@@ -90,6 +180,8 @@
 				E26F85862116599F00071F30 /* TimeTracker.app */,
 				E26F859A211659A200071F30 /* TimeTrackerTests.xctest */,
 				E26F85A5211659A200071F30 /* TimeTrackerUITests.xctest */,
+				E23ED97A21165F9E00375059 /* Tracker.framework */,
+				E23ED98221165F9F00375059 /* TrackerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,9 +217,64 @@
 			path = TimeTrackerUITests;
 			sourceTree = "<group>";
 		};
+		E26F85E121165B2C00071F30 /* Samples */ = {
+			isa = PBXGroup;
+			children = (
+				E2F02E3421165E24005DBDC0 /* TrackerSample.playground */,
+			);
+			path = Samples;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		E23ED97721165F9E00375059 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E23ED98A21165F9F00375059 /* Tracker.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		E23ED97921165F9E00375059 /* Tracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E23ED98F21165F9F00375059 /* Build configuration list for PBXNativeTarget "Tracker" */;
+			buildPhases = (
+				E23ED97521165F9E00375059 /* Sources */,
+				E23ED97621165F9E00375059 /* Frameworks */,
+				E23ED97721165F9E00375059 /* Headers */,
+				E23ED97821165F9E00375059 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tracker;
+			productName = Tracker;
+			productReference = E23ED97A21165F9E00375059 /* Tracker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E23ED98121165F9F00375059 /* TrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E23ED99021165F9F00375059 /* Build configuration list for PBXNativeTarget "TrackerTests" */;
+			buildPhases = (
+				E23ED97E21165F9F00375059 /* Sources */,
+				E23ED97F21165F9F00375059 /* Frameworks */,
+				E23ED98021165F9F00375059 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E23ED98521165F9F00375059 /* PBXTargetDependency */,
+			);
+			name = TrackerTests;
+			productName = TrackerTests;
+			productReference = E23ED98221165F9F00375059 /* TrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		E26F85852116599F00071F30 /* TimeTracker */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E26F85AE211659A200071F30 /* Build configuration list for PBXNativeTarget "TimeTracker" */;
@@ -135,6 +282,7 @@
 				E26F85822116599F00071F30 /* Sources */,
 				E26F85832116599F00071F30 /* Frameworks */,
 				E26F85842116599F00071F30 /* Resources */,
+				E26F85D821165A7A00071F30 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -191,6 +339,13 @@
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = danieltmbr;
 				TargetAttributes = {
+					E23ED97921165F9E00375059 = {
+						CreatedOnToolsVersion = 9.3.1;
+						LastSwiftMigration = 0930;
+					};
+					E23ED98121165F9F00375059 = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
 					E26F85852116599F00071F30 = {
 						CreatedOnToolsVersion = 9.3.1;
 					};
@@ -220,11 +375,27 @@
 				E26F85852116599F00071F30 /* TimeTracker */,
 				E26F8599211659A200071F30 /* TimeTrackerTests */,
 				E26F85A4211659A200071F30 /* TimeTrackerUITests */,
+				E23ED97921165F9E00375059 /* Tracker */,
+				E23ED98121165F9F00375059 /* TrackerTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		E23ED97821165F9E00375059 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E23ED98021165F9F00375059 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E26F85842116599F00071F30 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -252,6 +423,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		E23ED97521165F9E00375059 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E23ED99621165FC700375059 /* Arithmetical.swift in Sources */,
+				E207AD0F2119044A00E72F01 /* BalanceTracker+Dates.swift in Sources */,
+				E207AD11211A2EDD00E72F01 /* GrouppedTracker.swift in Sources */,
+				E207AD092118FC2900E72F01 /* BalanceTracker.swift in Sources */,
+				E23ED99521165FC700375059 /* Tracker.swift in Sources */,
+				E207AD0B2119033000E72F01 /* Tracker+Dates.swift in Sources */,
+				E23ED99421165FC700375059 /* TrackItem.swift in Sources */,
+				E207AD0D2119035E00E72F01 /* DateRange.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E23ED97E21165F9F00375059 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E23ED98821165F9F00375059 /* TrackerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E26F85822116599F00071F30 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -280,6 +474,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		E23ED98521165F9F00375059 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E23ED97921165F9E00375059 /* Tracker */;
+			targetProxy = E23ED98421165F9F00375059 /* PBXContainerItemProxy */;
+		};
 		E26F859C211659A200071F30 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = E26F85852116599F00071F30 /* TimeTracker */;
@@ -312,6 +511,99 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		E23ED98B21165F9F00375059 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Tracker/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hu.tmbr.Tracker;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E23ED98C21165F9F00375059 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Tracker/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hu.tmbr.Tracker;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E23ED98D21165F9F00375059 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TrackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hu.tmbr.TrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E23ED98E21165F9F00375059 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TrackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hu.tmbr.TrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		E26F85AC211659A200071F30 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -429,6 +721,7 @@
 		E26F85AF211659A200071F30 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F6W8CTW858;
@@ -447,6 +740,7 @@
 		E26F85B0211659A200071F30 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F6W8CTW858;
@@ -547,6 +841,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E23ED98F21165F9F00375059 /* Build configuration list for PBXNativeTarget "Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E23ED98B21165F9F00375059 /* Debug */,
+				E23ED98C21165F9F00375059 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E23ED99021165F9F00375059 /* Build configuration list for PBXNativeTarget "TrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E23ED98D21165F9F00375059 /* Debug */,
+				E23ED98E21165F9F00375059 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E26F85812116599F00071F30 /* Build configuration list for PBXProject "TimeTracker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
