@@ -6,31 +6,39 @@ import Tracker
  The purpose of Tracker protocol is to easly 
  */
 
-struct TimeItem: DatedTrackItem {
+struct TimeItem: TrackItem {
 
-    let value: Measurement<UnitDuration>
+    let magnitude: Measurement<UnitDuration>
 
     let date = Date()
 
-    static func make(_ value: Double, _ unit: UnitDuration = .hours) -> TimeItem {
-        return TimeItem(value: Measurement<UnitDuration>(value: value, unit: unit))
+    static func make(_ magnitude: Double, _ unit: UnitDuration = .hours) -> TimeItem {
+        return TimeItem(magnitude: Measurement<UnitDuration>(value: magnitude, unit: unit))
     }
 }
 
-struct Trck: BalanceTracker {
-    private(set) var items: [TimeItem] = []
-    private(set) var sources: [TimeItem] = []
+struct Trck: GroupBalanceTracker {
+
+    typealias Group = DateInterval
+    typealias Item = TimeItem
+    typealias Source = TimeItem
+
+    private(set) var items: [DateInterval : [TimeItem]] = [:]
+    private(set) var sources: [DateInterval : [TimeItem]] = [:]
 }
 
-let trck = Trck(
-    items: [.make(1), .make(2), .make(30, .minutes)],
-    sources: [.make(1), .make(2), .make(30, .minutes)]
-)
+let trck = Trck(items: [:], sources: [:])
+//    items: [.make(1), .make(2), .make(30, .minutes)],
+//    sources: [.make(1), .make(2), .make(30, .minutes)]
+//)
 
-trck.avgItemValue()
-trck.avgSourceValue()
+let items = trck.items.values(in: DateInterval(start: Date(), duration: 60*60*24)).flatMap { $0 }
 
-trck.sumItemValue() == trck.sumSourceValue()
-
-trck.avgSourceValue(in: .day())
+//
+//trck.meanItemValue()
+//trck.meanSourceValue()
+//
+//trck.sumItemValue() == trck.sumSourceValue()
+//
+//trck.meanSourceValue(in: .day())
 

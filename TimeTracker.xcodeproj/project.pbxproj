@@ -7,11 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A75280402124D72B0078336F /* Primitives+Arithmetical.swift in Sources */ = {isa = PBXBuildFile; fileRef = A752803F2124D72B0078336F /* Primitives+Arithmetical.swift */; };
+		A75280422124D8E10078336F /* Primitives+TrackItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75280412124D8E10078336F /* Primitives+TrackItem.swift */; };
+		A75280452124D9800078336F /* Array+Arithmetical.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75280442124D9800078336F /* Array+Arithmetical.swift */; };
+		A75280472124D9D30078336F /* GroupBalanceTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75280462124D9D30078336F /* GroupBalanceTracker.swift */; };
+		A799DA932129A6D600C34426 /* Dictionary+TrackItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A799DA922129A6D600C34426 /* Dictionary+TrackItem.swift */; };
+		A799DA952129B3C300C34426 /* Array+TrackItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A799DA942129B3C300C34426 /* Array+TrackItem.swift */; };
+		A799DA97212AC54400C34426 /* Calendar+DateInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = A799DA96212AC54400C34426 /* Calendar+DateInterval.swift */; };
+		A799DA9D212B5C9300C34426 /* Measurement+Arithmetical.swift in Sources */ = {isa = PBXBuildFile; fileRef = A799DA9C212B5C9300C34426 /* Measurement+Arithmetical.swift */; };
+		A799DA9F212B5C9D00C34426 /* Measurement+TrackItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A799DA9E212B5C9D00C34426 /* Measurement+TrackItem.swift */; };
 		E207AD092118FC2900E72F01 /* BalanceTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207AD082118FC2900E72F01 /* BalanceTracker.swift */; };
-		E207AD0B2119033000E72F01 /* Tracker+Dates.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207AD0A2119033000E72F01 /* Tracker+Dates.swift */; };
-		E207AD0D2119035E00E72F01 /* DateRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207AD0C2119035E00E72F01 /* DateRange.swift */; };
-		E207AD0F2119044A00E72F01 /* BalanceTracker+Dates.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207AD0E2119044A00E72F01 /* BalanceTracker+Dates.swift */; };
-		E207AD11211A2EDD00E72F01 /* GrouppedTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207AD10211A2EDD00E72F01 /* GrouppedTracker.swift */; };
+		E207AD11211A2EDD00E72F01 /* GroupTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207AD10211A2EDD00E72F01 /* GroupTracker.swift */; };
+		E207AD13211F273900E72F01 /* Dictionary+DateInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207AD12211F273900E72F01 /* Dictionary+DateInterval.swift */; };
 		E23ED98321165F9F00375059 /* Tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E23ED97A21165F9E00375059 /* Tracker.framework */; };
 		E23ED98821165F9F00375059 /* TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23ED98721165F9F00375059 /* TrackerTests.swift */; };
 		E23ED98A21165F9F00375059 /* Tracker.h in Headers */ = {isa = PBXBuildFile; fileRef = E23ED97C21165F9E00375059 /* Tracker.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -65,11 +72,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A752803F2124D72B0078336F /* Primitives+Arithmetical.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Primitives+Arithmetical.swift"; sourceTree = "<group>"; };
+		A75280412124D8E10078336F /* Primitives+TrackItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Primitives+TrackItem.swift"; sourceTree = "<group>"; };
+		A75280442124D9800078336F /* Array+Arithmetical.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Arithmetical.swift"; sourceTree = "<group>"; };
+		A75280462124D9D30078336F /* GroupBalanceTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupBalanceTracker.swift; sourceTree = "<group>"; };
+		A799DA922129A6D600C34426 /* Dictionary+TrackItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+TrackItem.swift"; sourceTree = "<group>"; };
+		A799DA942129B3C300C34426 /* Array+TrackItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+TrackItem.swift"; sourceTree = "<group>"; };
+		A799DA96212AC54400C34426 /* Calendar+DateInterval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+DateInterval.swift"; sourceTree = "<group>"; };
+		A799DA9C212B5C9300C34426 /* Measurement+Arithmetical.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Measurement+Arithmetical.swift"; sourceTree = "<group>"; };
+		A799DA9E212B5C9D00C34426 /* Measurement+TrackItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Measurement+TrackItem.swift"; sourceTree = "<group>"; };
 		E207AD082118FC2900E72F01 /* BalanceTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceTracker.swift; sourceTree = "<group>"; };
-		E207AD0A2119033000E72F01 /* Tracker+Dates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tracker+Dates.swift"; sourceTree = "<group>"; };
-		E207AD0C2119035E00E72F01 /* DateRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateRange.swift; sourceTree = "<group>"; };
-		E207AD0E2119044A00E72F01 /* BalanceTracker+Dates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BalanceTracker+Dates.swift"; sourceTree = "<group>"; };
-		E207AD10211A2EDD00E72F01 /* GrouppedTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrouppedTracker.swift; sourceTree = "<group>"; };
+		E207AD10211A2EDD00E72F01 /* GroupTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupTracker.swift; sourceTree = "<group>"; };
+		E207AD12211F273900E72F01 /* Dictionary+DateInterval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+DateInterval.swift"; sourceTree = "<group>"; };
 		E23ED97A21165F9E00375059 /* Tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E23ED97C21165F9E00375059 /* Tracker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tracker.h; sourceTree = "<group>"; };
 		E23ED97D21165F9E00375059 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -135,19 +149,74 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A75280432124D9110078336F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A799DA99212B5BFB00C34426 /* Array */,
+				A799DAA0212B5D0700C34426 /* Calendar */,
+				A799DA9A212B5C0800C34426 /* Dictionary */,
+				A799DA9B212B5C8300C34426 /* Measurement */,
+				A799DA98212B5B5F00C34426 /* Primitives */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A799DA98212B5B5F00C34426 /* Primitives */ = {
+			isa = PBXGroup;
+			children = (
+				A752803F2124D72B0078336F /* Primitives+Arithmetical.swift */,
+				A75280412124D8E10078336F /* Primitives+TrackItem.swift */,
+			);
+			path = Primitives;
+			sourceTree = "<group>";
+		};
+		A799DA99212B5BFB00C34426 /* Array */ = {
+			isa = PBXGroup;
+			children = (
+				A75280442124D9800078336F /* Array+Arithmetical.swift */,
+				A799DA942129B3C300C34426 /* Array+TrackItem.swift */,
+			);
+			path = Array;
+			sourceTree = "<group>";
+		};
+		A799DA9A212B5C0800C34426 /* Dictionary */ = {
+			isa = PBXGroup;
+			children = (
+				E207AD12211F273900E72F01 /* Dictionary+DateInterval.swift */,
+				A799DA922129A6D600C34426 /* Dictionary+TrackItem.swift */,
+			);
+			path = Dictionary;
+			sourceTree = "<group>";
+		};
+		A799DA9B212B5C8300C34426 /* Measurement */ = {
+			isa = PBXGroup;
+			children = (
+				A799DA9C212B5C9300C34426 /* Measurement+Arithmetical.swift */,
+				A799DA9E212B5C9D00C34426 /* Measurement+TrackItem.swift */,
+			);
+			path = Measurement;
+			sourceTree = "<group>";
+		};
+		A799DAA0212B5D0700C34426 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				A799DA96212AC54400C34426 /* Calendar+DateInterval.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
 		E23ED97B21165F9E00375059 /* Tracker */ = {
 			isa = PBXGroup;
 			children = (
 				E23ED97C21165F9E00375059 /* Tracker.h */,
 				E23ED97D21165F9E00375059 /* Info.plist */,
 				E23ED99321165FC700375059 /* Arithmetical.swift */,
-				E207AD082118FC2900E72F01 /* BalanceTracker.swift */,
-				E207AD0E2119044A00E72F01 /* BalanceTracker+Dates.swift */,
-				E207AD0C2119035E00E72F01 /* DateRange.swift */,
-				E207AD10211A2EDD00E72F01 /* GrouppedTracker.swift */,
-				E23ED99221165FC600375059 /* Tracker.swift */,
-				E207AD0A2119033000E72F01 /* Tracker+Dates.swift */,
 				E23ED99121165FC600375059 /* TrackItem.swift */,
+				E23ED99221165FC600375059 /* Tracker.swift */,
+				E207AD082118FC2900E72F01 /* BalanceTracker.swift */,
+				E207AD10211A2EDD00E72F01 /* GroupTracker.swift */,
+				A75280462124D9D30078336F /* GroupBalanceTracker.swift */,
+				A75280432124D9110078336F /* Extensions */,
 			);
 			path = Tracker;
 			sourceTree = "<group>";
@@ -428,13 +497,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				E23ED99621165FC700375059 /* Arithmetical.swift in Sources */,
-				E207AD0F2119044A00E72F01 /* BalanceTracker+Dates.swift in Sources */,
-				E207AD11211A2EDD00E72F01 /* GrouppedTracker.swift in Sources */,
+				E207AD11211A2EDD00E72F01 /* GroupTracker.swift in Sources */,
 				E207AD092118FC2900E72F01 /* BalanceTracker.swift in Sources */,
+				A799DA9D212B5C9300C34426 /* Measurement+Arithmetical.swift in Sources */,
+				A75280472124D9D30078336F /* GroupBalanceTracker.swift in Sources */,
+				A75280422124D8E10078336F /* Primitives+TrackItem.swift in Sources */,
+				A75280402124D72B0078336F /* Primitives+Arithmetical.swift in Sources */,
+				A799DA9F212B5C9D00C34426 /* Measurement+TrackItem.swift in Sources */,
+				E207AD13211F273900E72F01 /* Dictionary+DateInterval.swift in Sources */,
 				E23ED99521165FC700375059 /* Tracker.swift in Sources */,
-				E207AD0B2119033000E72F01 /* Tracker+Dates.swift in Sources */,
+				A799DA97212AC54400C34426 /* Calendar+DateInterval.swift in Sources */,
+				A799DA932129A6D600C34426 /* Dictionary+TrackItem.swift in Sources */,
 				E23ED99421165FC700375059 /* TrackItem.swift in Sources */,
-				E207AD0D2119035E00E72F01 /* DateRange.swift in Sources */,
+				A799DA952129B3C300C34426 /* Array+TrackItem.swift in Sources */,
+				A75280452124D9800078336F /* Array+Arithmetical.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

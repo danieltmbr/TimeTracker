@@ -21,16 +21,29 @@ class TrackerTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
+//    func testExample() {
+//        // This is an example of a functional test case.
+//        // Use XCTAssert and related functions to verify your tests produce the correct results.
+//    }
+
+    func testPerformace_magnitudesSum() {
         // This is an example of a performance test case.
+        let doubles =  Array(repeating: DoubleItem(magnitude: 12), count: 1000000)
         self.measure {
-            // Put the code you want to measure the time of here.
+            _ = doubles.magnitudes.sum()
         }
     }
-    
+
+    func testPerformace_reduceSum() {
+        // This is an example of a performance test case.
+        let doubles =  Array(repeating: DoubleItem(magnitude: 12), count: 1000000)
+        self.measure {
+            _ = doubles.reduce(Double.zero) { return $0 + $1.magnitude }
+        }
+    }
+}
+
+struct DoubleItem: TrackItem {
+
+    var magnitude: Double
 }

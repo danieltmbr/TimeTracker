@@ -2,30 +2,31 @@ import Foundation
 
 // MARK: -
 
-public protocol TrackItem: Equatable {
+public protocol TrackItem: Comparable {
+    /// Type of the volume that the TrackItem represents
     associatedtype Magnitude: Arithmetical
 
-    var value: Magnitude { get }
+    /// The volume of a TrackItem
+    var magnitude: Magnitude { get }
 }
 
-public protocol DatedTrackItem: TrackItem {
-    var date: Date { get }
-}
+// MARK: - Comparable implementation
 
-// MARK: - Foundation's extension
+extension TrackItem {
 
-extension Double: TrackItem {
-    public var value: Double { return self }
-}
+    public static func < (lhs: Self, rhs: Self) -> Bool {
+        return lhs.magnitude < rhs.magnitude
+    }
 
-extension Float: TrackItem {
-    public var value: Float { return self }
-}
+    public static func <= (lhs: Self, rhs: Self) -> Bool {
+        return lhs.magnitude <= rhs.magnitude
+    }
 
-extension CGFloat: TrackItem {
-    public var value: CGFloat { return self }
-}
+    public static func > (lhs: Self, rhs: Self) -> Bool {
+        return lhs.magnitude > rhs.magnitude
+    }
 
-extension Measurement: TrackItem where UnitType: Dimension {
-    public var value: Measurement<UnitType> { return self }
+    public static func >= (lhs: Self, rhs: Self) -> Bool {
+        return lhs.magnitude >= rhs.magnitude
+    }
 }

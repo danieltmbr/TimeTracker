@@ -7,12 +7,25 @@
 //
 
 import UIKit
+import Tracker
+
+class BalancedTracker: BalanceTracker {
+
+    typealias Source = Double
+    typealias BalanceType = DefaultBalance<Double>
+
+    var items: [Double] = []
+    var sources: [Double] = []
+}
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+
+        let tracker = BalancedTracker()
+        tracker.balance()
     }
 
     override func didReceiveMemoryWarning() {
