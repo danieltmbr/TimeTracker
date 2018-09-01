@@ -1,3 +1,5 @@
+//  Copyright © 2018. danieltmbr. All rights reserved.
+
 import Foundation
 
 public protocol GroupBalanceTracker: GroupTracker {
@@ -31,7 +33,7 @@ public protocol GroupBalanceTracker: GroupTracker {
 
 extension GroupBalanceTracker {
     /// All stored `Source`s without groupping.
-    var allSources: [Source] { return sources.flatMap { $0.value } }
+    public var allSources: [Source] { return sources.flatMap { $0.value } }
 
     /**
      Difference between `sum()` of `sources` and `sum()` of `items`.
@@ -40,8 +42,8 @@ extension GroupBalanceTracker {
      */
     public func balance(for group: Group) -> DefaultBalance<Source.Magnitude> {
         return DefaultBalance(
-            source: sources[group]?.sum() ?? .zero,
-            drain: items[group]?.sum() ?? .zero
+            sources: sources[group] ?? [],
+            drains: items[group] ?? []
         )
     }
 
@@ -52,8 +54,33 @@ extension GroupBalanceTracker {
 
 extension GroupBalanceTracker where Group == Date, Source: TrackItem {
     /**
-     When `sources` are groupped by date, you can select all
-     sources from a group which is inside of a `DateInterval`.
+     When `sources` are groupped by `Date`, you can select all
+     sources from multiple groups which are inside of a `DateInterval`.
+     - Complexity: O(n)
+     - Parameter dateInterval: Date range for which the sources will be listed.
+     - Returns: Flattaned `Source` list containing all the sources
+     from groups which in the range of a `DateInterval`
+     */
+    public func sources(in dateInterval: DateInterval) -> [Source] {
+        return sources.flatValues(in: dateInterval)
+    }
+
+    public func balance(in dateInterval: DateInterval) -> DefaultBalance<Source.Magnitude> {
+        return DefaultBalance(
+            source: sources.sum(in: dateInterval),
+            drain: items.sum(in: dateInterval)
+        )
+    }
+
+    public func balanceValue(in dateInterval: DateInterval) -> Source.Magnitude {
+        return balance(in: dateInterval).difference
+    }
+}
+
+extension GroupBalanceTracker where Group == DateInterval, Source: TrackItem {
+    /**
+     When `sources` are groupped by `DateInterval`, you can select all
+     sources from multiple groups which are inside of a `DateInterval`.
      - Complexity: O(n)
      - Parameter dateInterval: Date range for which the sources will be listed.
      - Returns: Flattaned `Source` list containing all the sources

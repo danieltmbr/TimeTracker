@@ -1,14 +1,6 @@
+//  Copyright © 2018. danieltmbr. All rights reserved.
+
 import Foundation
-
-public protocol Balance {
-    /// Type that represents the volume of balance
-    associatedtype Magnitude: Arithmetical
-
-    var source: Magnitude { get }
-    var drain: Magnitude { get }
-    /// Difference of source and drain
-    var difference: Magnitude { get }
-}
 
 // MARK: -
 
@@ -40,7 +32,7 @@ public protocol BalanceTracker: Tracker {
     func balance() -> BalanceType
 }
 
-// MARK: - Balance
+// MARK: - BalanceTracker default implementations
 
 public extension BalanceTracker {
 
@@ -50,29 +42,14 @@ public extension BalanceTracker {
      - Returns: Magnitude of the difference, sum of `sources`, sum of `items`.
      */
     public func balance() -> DefaultBalance<Source.Magnitude> {
-        return DefaultBalance(source: sources.sum(), drain: items.sum())
+        return DefaultBalance(sources: sources, drains: items)
     }
 
+    /**
+     Helper methods which only returns the actual value of the balance.
+     If maginute of the sources and drains needed use `balance()`.
+     */
     public func balanceValue() -> Source.Magnitude {
         return balance().difference
     }
 }
-
-// MARK: - Default Balance implementation
-
-public struct DefaultBalance<BalanceType>: Balance where BalanceType: Arithmetical {
-    public let source: BalanceType
-    public let drain: BalanceType
-
-    public init(source: BalanceType, drain: BalanceType) {
-        self.source = source
-        self.drain = drain
-    }
-}
-
-extension Balance {
-    public var difference: Magnitude {
-        return source - drain
-    }
-}
-

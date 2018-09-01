@@ -1,3 +1,5 @@
+//  Copyright © 2018. danieltmbr. All rights reserved.
+
 import Foundation
 
 public protocol Arithmetical: Comparable {

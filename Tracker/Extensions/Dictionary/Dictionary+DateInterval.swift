@@ -1,3 +1,5 @@
+//  Copyright © 2018. danieltmbr. All rights reserved.
+
 import Foundation
 
 extension Dictionary where Key == Date {

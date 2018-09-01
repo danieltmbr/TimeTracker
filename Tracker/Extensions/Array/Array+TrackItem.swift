@@ -1,3 +1,5 @@
+//  Copyright © 2018. danieltmbr. All rights reserved.
+
 import Foundation
 
 public extension Array where Element: TrackItem {
@@ -7,7 +9,7 @@ public extension Array where Element: TrackItem {
     }
 
     /**
-     Accumulated value of Arithmetical elements.
+     Accumulated value of TrackItem elements.
      If list is empty it returns the `zero` value of TrackUnit.
      */
     public func sum() -> Element.Magnitude {
@@ -15,7 +17,7 @@ public extension Array where Element: TrackItem {
     }
 
     /**
-     Avarage value of Arithmetical elements.
+     Avarage value of TrackItem elements.
      If list is empty it returns the `zero` value of TrackUnit.
      */
     public func mean() -> Element.Magnitude {
@@ -39,7 +41,7 @@ public extension Array where Element: TrackItem {
     }
 
     /**
-     Range value of Arithmetical elements (maxValue - minValue).
+     Range value of TrackItem elements (maxValue - minValue).
      If list is empty it returns `nil`.
      */
     public func range() -> Element.Magnitude? {
