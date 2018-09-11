@@ -1,3 +1,6 @@
+//  Copyright © 2018. danieltmbr. All rights reserved.
+//
+
 import Foundation
 
 extension Measurement: Arithmetical where UnitType : Dimension {

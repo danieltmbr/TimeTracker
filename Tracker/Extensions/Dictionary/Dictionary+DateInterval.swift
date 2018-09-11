@@ -1,4 +1,5 @@
 //  Copyright © 2018. danieltmbr. All rights reserved.
+//
 
 import Foundation
 
@@ -8,7 +9,7 @@ extension Dictionary where Key == Date {
         return compactMap { dateInterval.contains($0.key) ? $0.value : nil }
     }
 
-    subscript(interval: DateInterval) -> [Value] {
+    public subscript(interval: DateInterval) -> [Value] {
         return values(in: interval)
     }
 }
@@ -19,7 +20,7 @@ extension Dictionary where Key == Date, Value: Collection {
         return filter { dateInterval.contains($0.key) }.flatMap { $0.value }
     }
 
-    subscript(interval: DateInterval) -> [Value.Element] {
+    public subscript(interval: DateInterval) -> [Value.Element] {
         return flatValues(in: interval)
     }
 }

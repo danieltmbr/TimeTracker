@@ -1,4 +1,5 @@
 //  Copyright © 2018. danieltmbr. All rights reserved.
+//
 
 import Foundation
 
@@ -32,7 +33,7 @@ extension Array where Element: Arithmetical {
         let sortedList = sorted()
         let index = count/2
         return count % 2 == 0
-            ? (sortedList[index] + sortedList[index+1])/2
+            ? (sortedList[index-1] + sortedList[index])/2
             : sortedList[index]
     }
 
@@ -54,6 +55,6 @@ extension Array where Element: Arithmetical, Element: Hashable {
      */
     public func mode() -> Element? {
         let counts = Dictionary(map { ($0, 1) }, uniquingKeysWith: +)
-        return counts.max { $0.value > $1.value }?.key
+        return counts.max { $0.value < $1.value }?.key
     }
 }

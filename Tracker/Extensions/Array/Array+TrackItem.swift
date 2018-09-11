@@ -1,4 +1,5 @@
 //  Copyright © 2018. danieltmbr. All rights reserved.
+//
 
 import Foundation
 
@@ -36,7 +37,7 @@ public extension Array where Element: TrackItem {
         let sortedList = sorted()
         let index = count/2
         return count % 2 == 0
-            ? (sortedList[index].magnitude + sortedList[index+1].magnitude)/Double(2)
+            ? (sortedList[index-1].magnitude + sortedList[index].magnitude)/Double(2)
             : sortedList[index].magnitude
     }
 
@@ -58,7 +59,7 @@ extension Array where Element: TrackItem, Element.Magnitude: Hashable {
      */
     public func mode() -> Element.Magnitude? {
         let counts = Dictionary(map { ($0.magnitude, 1) }, uniquingKeysWith: +)
-        return counts.max { $0.value > $1.value }?.key
+        return counts.max { $0.value < $1.value }?.key
     }
 }
 

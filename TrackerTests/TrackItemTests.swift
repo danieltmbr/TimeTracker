@@ -1,8 +1,3 @@
-//
-//  TrackItemTests.swift
-//  TrackerTests
-//
-//  Created by Daniel Tombor on 2018. 09. 01..
 //  Copyright © 2018. danieltmbr. All rights reserved.
 //
 

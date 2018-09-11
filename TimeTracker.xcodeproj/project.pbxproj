@@ -21,6 +21,13 @@
 		E207AD13211F273900E72F01 /* Dictionary+DateInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207AD12211F273900E72F01 /* Dictionary+DateInterval.swift */; };
 		E211D028213761A9007A9572 /* DefaultBalanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E211D027213761A9007A9572 /* DefaultBalanceTests.swift */; };
 		E211D02A2138B78D007A9572 /* MockTrackItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E211D0292138B78D007A9572 /* MockTrackItem.swift */; };
+		E2321C02213C43BB0005F7A0 /* ArithmeticalArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2321C01213C43BB0005F7A0 /* ArithmeticalArrayTests.swift */; };
+		E2321C04213C4AC80005F7A0 /* TrackItemPrimitivesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2321C03213C4AC80005F7A0 /* TrackItemPrimitivesTests.swift */; };
+		E2321C06213C4CCE0005F7A0 /* TrackItemMeasurementsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2321C05213C4CCE0005F7A0 /* TrackItemMeasurementsTests.swift */; };
+		E2321C08213C8C810005F7A0 /* ArithmeticalMeasurementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2321C07213C8C810005F7A0 /* ArithmeticalMeasurementTests.swift */; };
+		E2321C0A213C8FCC0005F7A0 /* DictionaryDateIntervalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2321C09213C8FCC0005F7A0 /* DictionaryDateIntervalTests.swift */; };
+		E2321C0C2147291E0005F7A0 /* TrackItemDictionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2321C0B2147291E0005F7A0 /* TrackItemDictionaryTests.swift */; };
+		E2321C102148795E0005F7A0 /* ArithmeticalPrimitivesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2321C0F2148795E0005F7A0 /* ArithmeticalPrimitivesTests.swift */; };
 		E23ED98321165F9F00375059 /* Tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E23ED97A21165F9E00375059 /* Tracker.framework */; };
 		E23ED98821165F9F00375059 /* BalanceTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23ED98721165F9F00375059 /* BalanceTrackerTests.swift */; };
 		E23ED98A21165F9F00375059 /* Tracker.h in Headers */ = {isa = PBXBuildFile; fileRef = E23ED97C21165F9E00375059 /* Tracker.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -31,6 +38,7 @@
 		E25620B6213B060200F92CEA /* GroupTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25620B5213B060200F92CEA /* GroupTrackerTests.swift */; };
 		E25620B8213B1A2500F92CEA /* GroupBalanceTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25620B7213B1A2500F92CEA /* GroupBalanceTrackerTests.swift */; };
 		E25620BA213B402400F92CEA /* TrackItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25620B9213B402400F92CEA /* TrackItemTests.swift */; };
+		E25620BD213B43FC00F92CEA /* TrackItemArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25620BC213B43FC00F92CEA /* TrackItemArrayTests.swift */; };
 		E26F858A2116599F00071F30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26F85892116599F00071F30 /* AppDelegate.swift */; };
 		E26F858C2116599F00071F30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26F858B2116599F00071F30 /* ViewController.swift */; };
 		E26F858F2116599F00071F30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E26F858D2116599F00071F30 /* Main.storyboard */; };
@@ -92,6 +100,14 @@
 		E207AD12211F273900E72F01 /* Dictionary+DateInterval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+DateInterval.swift"; sourceTree = "<group>"; };
 		E211D027213761A9007A9572 /* DefaultBalanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultBalanceTests.swift; sourceTree = "<group>"; };
 		E211D0292138B78D007A9572 /* MockTrackItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTrackItem.swift; sourceTree = "<group>"; };
+		E2321C01213C43BB0005F7A0 /* ArithmeticalArrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArithmeticalArrayTests.swift; sourceTree = "<group>"; };
+		E2321C03213C4AC80005F7A0 /* TrackItemPrimitivesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackItemPrimitivesTests.swift; sourceTree = "<group>"; };
+		E2321C05213C4CCE0005F7A0 /* TrackItemMeasurementsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackItemMeasurementsTests.swift; sourceTree = "<group>"; };
+		E2321C07213C8C810005F7A0 /* ArithmeticalMeasurementTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArithmeticalMeasurementTests.swift; sourceTree = "<group>"; };
+		E2321C09213C8FCC0005F7A0 /* DictionaryDateIntervalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryDateIntervalTests.swift; sourceTree = "<group>"; };
+		E2321C0B2147291E0005F7A0 /* TrackItemDictionaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackItemDictionaryTests.swift; sourceTree = "<group>"; };
+		E2321C0E214730110005F7A0 /* medikus.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = medikus.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		E2321C0F2148795E0005F7A0 /* ArithmeticalPrimitivesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArithmeticalPrimitivesTests.swift; sourceTree = "<group>"; };
 		E23ED97A21165F9E00375059 /* Tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E23ED97C21165F9E00375059 /* Tracker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tracker.h; sourceTree = "<group>"; };
 		E23ED97D21165F9E00375059 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -105,6 +121,7 @@
 		E25620B5213B060200F92CEA /* GroupTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupTrackerTests.swift; sourceTree = "<group>"; };
 		E25620B7213B1A2500F92CEA /* GroupBalanceTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupBalanceTrackerTests.swift; sourceTree = "<group>"; };
 		E25620B9213B402400F92CEA /* TrackItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackItemTests.swift; sourceTree = "<group>"; };
+		E25620BC213B43FC00F92CEA /* TrackItemArrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackItemArrayTests.swift; sourceTree = "<group>"; };
 		E26F85862116599F00071F30 /* TimeTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E26F85892116599F00071F30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E26F858B2116599F00071F30 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -251,14 +268,31 @@
 				E25620B5213B060200F92CEA /* GroupTrackerTests.swift */,
 				E25620B7213B1A2500F92CEA /* GroupBalanceTrackerTests.swift */,
 				E25620B9213B402400F92CEA /* TrackItemTests.swift */,
+				E25620BB213B43D600F92CEA /* ExtesnionsTests */,
 				E211D02B2138B79A007A9572 /* Mocks */,
 			);
 			path = TrackerTests;
 			sourceTree = "<group>";
 		};
+		E25620BB213B43D600F92CEA /* ExtesnionsTests */ = {
+			isa = PBXGroup;
+			children = (
+				E2321C01213C43BB0005F7A0 /* ArithmeticalArrayTests.swift */,
+				E2321C07213C8C810005F7A0 /* ArithmeticalMeasurementTests.swift */,
+				E2321C0F2148795E0005F7A0 /* ArithmeticalPrimitivesTests.swift */,
+				E25620BC213B43FC00F92CEA /* TrackItemArrayTests.swift */,
+				E2321C03213C4AC80005F7A0 /* TrackItemPrimitivesTests.swift */,
+				E2321C05213C4CCE0005F7A0 /* TrackItemMeasurementsTests.swift */,
+				E2321C0B2147291E0005F7A0 /* TrackItemDictionaryTests.swift */,
+				E2321C09213C8FCC0005F7A0 /* DictionaryDateIntervalTests.swift */,
+			);
+			path = ExtesnionsTests;
+			sourceTree = "<group>";
+		};
 		E26F857D2116599F00071F30 = {
 			isa = PBXGroup;
 			children = (
+				E2321C0E214730110005F7A0 /* medikus.playground */,
 				E26F85E121165B2C00071F30 /* Samples */,
 				E23ED97B21165F9E00375059 /* Tracker */,
 				E23ED98621165F9F00375059 /* TrackerTests */,
@@ -545,12 +579,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2321C02213C43BB0005F7A0 /* ArithmeticalArrayTests.swift in Sources */,
 				E211D02A2138B78D007A9572 /* MockTrackItem.swift in Sources */,
+				E2321C04213C4AC80005F7A0 /* TrackItemPrimitivesTests.swift in Sources */,
+				E25620BD213B43FC00F92CEA /* TrackItemArrayTests.swift in Sources */,
+				E2321C0A213C8FCC0005F7A0 /* DictionaryDateIntervalTests.swift in Sources */,
+				E2321C06213C4CCE0005F7A0 /* TrackItemMeasurementsTests.swift in Sources */,
 				E211D028213761A9007A9572 /* DefaultBalanceTests.swift in Sources */,
 				E25620BA213B402400F92CEA /* TrackItemTests.swift in Sources */,
 				E25620B6213B060200F92CEA /* GroupTrackerTests.swift in Sources */,
 				E23ED98821165F9F00375059 /* BalanceTrackerTests.swift in Sources */,
+				E2321C102148795E0005F7A0 /* ArithmeticalPrimitivesTests.swift in Sources */,
 				E25620B8213B1A2500F92CEA /* GroupBalanceTrackerTests.swift in Sources */,
+				E2321C0C2147291E0005F7A0 /* TrackItemDictionaryTests.swift in Sources */,
+				E2321C08213C8C810005F7A0 /* ArithmeticalMeasurementTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
