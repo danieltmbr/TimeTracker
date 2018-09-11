@@ -1,9 +1,7 @@
 import Tracker
 
-/*:
+/**
  # Examples of using Tracker protocol
-
- The purpose of Tracker protocol is to easly 
  */
 
 struct TimeItem: TrackItem {
@@ -27,18 +25,25 @@ struct Trck: GroupBalanceTracker {
     private(set) var sources: [DateInterval : [TimeItem]] = [:]
 }
 
-let trck = Trck(items: [:], sources: [:])
-//    items: [.make(1), .make(2), .make(30, .minutes)],
-//    sources: [.make(1), .make(2), .make(30, .minutes)]
-//)
+// ---------------------------------
 
-let items = trck.items.values(in: DateInterval(start: Date(), duration: 60*60*24)).flatMap { $0 }
+let hour: DateInterval = DateInterval(start: Date(), duration: 60*60)
+let nextHour: DateInterval = DateInterval(start: hour.end, duration: 60*60)
 
-//
-//trck.meanItemValue()
-//trck.meanSourceValue()
-//
-//trck.sumItemValue() == trck.sumSourceValue()
-//
-//trck.meanSourceValue(in: .day())
+let drains: [DateInterval: [TimeItem]] = [
+    hour : [.make(1), .make(1)],
+    nextHour: [.make(30, .minutes)]
+]
+let sources: [DateInterval: [TimeItem]] = [
+    hour: [.make(1), .make(2)],
+    nextHour: [.make(3)]
+]
 
+let trck = Trck(items: drains, sources: sources)
+
+// ---------------------------------
+
+trck.balanceValue(in: hour)
+trck.items(in: nextHour).sum()
+trck.sources(in: hour).mean()
+trck.sources(in: hour).range()

@@ -106,7 +106,6 @@
 		E2321C07213C8C810005F7A0 /* ArithmeticalMeasurementTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArithmeticalMeasurementTests.swift; sourceTree = "<group>"; };
 		E2321C09213C8FCC0005F7A0 /* DictionaryDateIntervalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryDateIntervalTests.swift; sourceTree = "<group>"; };
 		E2321C0B2147291E0005F7A0 /* TrackItemDictionaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackItemDictionaryTests.swift; sourceTree = "<group>"; };
-		E2321C0E214730110005F7A0 /* medikus.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = medikus.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		E2321C0F2148795E0005F7A0 /* ArithmeticalPrimitivesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArithmeticalPrimitivesTests.swift; sourceTree = "<group>"; };
 		E23ED97A21165F9E00375059 /* Tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E23ED97C21165F9E00375059 /* Tracker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tracker.h; sourceTree = "<group>"; };
@@ -292,7 +291,6 @@
 		E26F857D2116599F00071F30 = {
 			isa = PBXGroup;
 			children = (
-				E2321C0E214730110005F7A0 /* medikus.playground */,
 				E26F85E121165B2C00071F30 /* Samples */,
 				E23ED97B21165F9E00375059 /* Tracker */,
 				E23ED98621165F9F00375059 /* TrackerTests */,
