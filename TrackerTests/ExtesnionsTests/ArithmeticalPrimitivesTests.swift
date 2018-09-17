@@ -1,8 +1,8 @@
 //  Copyright © 2018. danieltmbr. All rights reserved.
 //
 
-import XCTest
 @testable import Tracker
+import XCTest
 
 class ArithmeticalPrimitivesTests: XCTestCase {
 

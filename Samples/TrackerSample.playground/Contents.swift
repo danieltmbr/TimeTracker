@@ -21,8 +21,8 @@ struct Trck: GroupBalanceTracker {
     typealias Item = TimeItem
     typealias Source = TimeItem
 
-    private(set) var items: [DateInterval : [TimeItem]] = [:]
-    private(set) var sources: [DateInterval : [TimeItem]] = [:]
+    private(set) var items: [DateInterval: [TimeItem]] = [:]
+    private(set) var sources: [DateInterval: [TimeItem]] = [:]
 }
 
 // ---------------------------------
@@ -31,7 +31,7 @@ let hour: DateInterval = DateInterval(start: Date(), duration: 60*60)
 let nextHour: DateInterval = DateInterval(start: hour.end, duration: 60*60)
 
 let drains: [DateInterval: [TimeItem]] = [
-    hour : [.make(1), .make(1)],
+    hour: [.make(1), .make(1)],
     nextHour: [.make(30, .minutes)]
 ]
 let sources: [DateInterval: [TimeItem]] = [

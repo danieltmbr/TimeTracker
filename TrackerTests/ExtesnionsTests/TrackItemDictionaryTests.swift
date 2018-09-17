@@ -48,9 +48,9 @@ class TrackItemDictionaryTests: XCTestCase {
         return (
             DateInterval(start: date1, end: date2),
             [
-                date1: [1,3,5,7,9,2,4,6,8,2,11,2].trackItems,
-                date2: [1,3,5,7,9,2,4,6,8,2,11,2].trackItems,
-                date3: [7,7,7,7,7,7,7,7,7,23,452].trackItems
+                date1: [1, 3, 5, 7, 9, 2, 4, 6, 8, 2, 11, 2].trackItems,
+                date2: [1, 3, 5, 7, 9, 2, 4, 6, 8, 2, 11, 2].trackItems,
+                date3: [7, 7, 7, 7, 7, 7, 7, 7, 7, 23, 452].trackItems
             ]
         )
     }
@@ -90,7 +90,6 @@ class TrackItemDictionaryTests: XCTestCase {
         XCTAssertEqual(items.mode(in: interval), 2)
     }
 
-
     private func setupDateIntervalsAndItems() -> (DateInterval, [DateInterval: [MockTrackItem]]) {
         let interval1 = DateInterval(start: Date(), duration: .hour)
         let interval2 = DateInterval(start: Date(timeInterval: .hour, since: interval1.end), duration: .hour)
@@ -99,9 +98,9 @@ class TrackItemDictionaryTests: XCTestCase {
         return (
             DateInterval(start: interval1.start, end: interval2.end),
             [
-                interval1: [1,3,5,7,9,2,4,6,8,2,11,2].trackItems,
-                interval2: [1,3,5,7,9,2,4,6,8,2,11,2].trackItems,
-                interval3: [7,7,7,7,7,7,7,7,7,23,452].trackItems
+                interval1: [1, 3, 5, 7, 9, 2, 4, 6, 8, 2, 11, 2].trackItems,
+                interval2: [1, 3, 5, 7, 9, 2, 4, 6, 8, 2, 11, 2].trackItems,
+                interval3: [7, 7, 7, 7, 7, 7, 7, 7, 7, 23, 452].trackItems
             ]
         )
     }

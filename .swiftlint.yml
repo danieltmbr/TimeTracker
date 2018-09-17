@@ -1,0 +1,46 @@
+excluded:
+    - Pods
+
+opt_in_rules:
+    - anyobject_protocol
+    - closure_spacing
+    - discouraged_optional_boolean
+    - empty_count
+    - empty_string
+    - explicit_init
+    - fallthrough
+    - fatal_error_message
+    - first_where
+    # - identical_operands
+    - literal_expression_end_indentation
+    - modifier_order
+    - multiline_arguments
+    - multiline_function_chains
+    - multiline_parameters 
+    - overridden_super_call
+    - private_action
+    - private_outlet
+    - prohibited_super_call
+    - redundant_nil_coalescing
+    - required_enum_case
+    - sorted_first_last
+    - sorted_imports
+    # - static_operator
+    - unavailable_function
+    - unneeded_parentheses_in_closure_argument
+    # - unused_import
+    # - unused_private_declaration
+
+disabled_rules:
+    - discarded_notification_center_observer
+    - file_length
+    - identifier_name
+    - large_tuple
+    - nesting
+    - notification_center_detachment
+    - operator_whitespace
+    - statement_position
+    - type_body_length
+    - trailing_newline
+
+line_length: 150

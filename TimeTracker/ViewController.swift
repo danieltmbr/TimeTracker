@@ -6,8 +6,8 @@
 //  Copyright © 2018. danieltmbr. All rights reserved.
 //
 
-import UIKit
 import Tracker
+import UIKit
 
 class BalancedTracker: BalanceTracker {
 
@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
 
         let tracker = BalancedTracker()
-        tracker.balance()
+        _ = tracker.balance()
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,6 +33,4 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
 }
-

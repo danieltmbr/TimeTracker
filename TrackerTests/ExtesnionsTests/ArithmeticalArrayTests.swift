@@ -1,13 +1,13 @@
 //  Copyright © 2018. danieltmbr. All rights reserved.
 //
 
-import XCTest
 @testable import Tracker
+import XCTest
 
 class ArithmeticalArrayTests: XCTestCase {
 
-    private let arithmeticals = [1,3,5,7,9,2,4,6,8,2,11,2].arithmeticals
-    private let hugeNumberOfArithmeticals = Array<Double>(repeating: 12345.56, count: 50000).arithmeticals
+    private let arithmeticals = [1, 3, 5, 7, 9, 2, 4, 6, 8, 2, 11, 2].arithmeticals
+    private let hugeNumberOfArithmeticals = [Double](repeating: 12345.56, count: 50000).arithmeticals
 
     func test_sum() {
         XCTAssertEqual(arithmeticals.sum(), 60.arithmetical)
@@ -30,7 +30,7 @@ class ArithmeticalArrayTests: XCTestCase {
     }
 
     func test_median_oddCount() {
-        let arithmeticals = [6,7,4,3,5].arithmeticals
+        let arithmeticals = [6, 7, 4, 3, 5].arithmeticals
         XCTAssertEqual(arithmeticals.median(), 5.arithmetical)
     }
 

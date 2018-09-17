@@ -5,11 +5,11 @@ import XCTest
 
 class TracItemArrayTests: XCTestCase {
 
-    let items = [1,3,5,7,9,2,4,6,8,2,11,2].trackItems
-    let hugeNumberOfItems = Array<Double>(repeating: 12345.56, count: 50000).trackItems
+    let items = [1, 3, 5, 7, 9, 2, 4, 6, 8, 2, 11, 2].trackItems
+    let hugeNumberOfItems = [Double](repeating: 12345.56, count: 50000).trackItems
 
     func test_magnitudes() {
-        XCTAssertEqual(items.magnitudes, [1,3,5,7,9,2,4,6,8,2,11,2])
+        XCTAssertEqual(items.magnitudes, [1, 3, 5, 7, 9, 2, 4, 6, 8, 2, 11, 2])
     }
 
     func test_sum() {
@@ -33,7 +33,7 @@ class TracItemArrayTests: XCTestCase {
     }
 
     func test_median_oddCount() {
-        let items = [6,7,4,3,5].trackItems
+        let items = [6, 7, 4, 3, 5].trackItems
         XCTAssertEqual(items.median(), 5)
     }
 
