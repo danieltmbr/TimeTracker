@@ -22,7 +22,7 @@ class DictionaryDateIntervalTests: XCTestCase {
 
         XCTAssertEqual(dict.values(in: DateInterval(start: firstDate, duration: .hour)), [1])
         XCTAssertEqual(dict.values(in: DateInterval(start: secondDate, duration: .hour)), [2])
-        XCTAssertEqual(dict.values(in: DateInterval(start: firstDate, end: secondDate)).sorted(), [1,2])
+        XCTAssertEqual(dict.values(in: DateInterval(start: firstDate, end: secondDate)).sorted(), [1, 2])
 
         let laterDate = Date(timeInterval: .day, since: secondDate)
         XCTAssertEqual(dict.values(in: DateInterval(start: laterDate, duration: .day)), [])
@@ -33,7 +33,7 @@ class DictionaryDateIntervalTests: XCTestCase {
 
         XCTAssertEqual(dict[DateInterval(start: firstDate, duration: .hour)], [1])
         XCTAssertEqual(dict[DateInterval(start: secondDate, duration: .hour)], [2])
-        XCTAssertEqual(dict[DateInterval(start: firstDate, end: secondDate)].sorted(), [1,2])
+        XCTAssertEqual(dict[DateInterval(start: firstDate, end: secondDate)].sorted(), [1, 2])
 
         let laterDate = Date(timeInterval: .day, since: secondDate)
         XCTAssertEqual(dict[DateInterval(start: laterDate, duration: .day)], [])
@@ -44,7 +44,7 @@ class DictionaryDateIntervalTests: XCTestCase {
 
         XCTAssertEqual(dict.flatValues(in: DateInterval(start: firstDate, duration: .hour)), [1])
         XCTAssertEqual(dict.flatValues(in: DateInterval(start: secondDate, duration: .hour)), [2])
-        XCTAssertEqual(dict.flatValues(in: DateInterval(start: firstDate, end: secondDate)).sorted(), [1,2])
+        XCTAssertEqual(dict.flatValues(in: DateInterval(start: firstDate, end: secondDate)).sorted(), [1, 2])
 
         let laterDate = Date(timeInterval: .day, since: secondDate)
         XCTAssertEqual(dict.flatValues(in: DateInterval(start: laterDate, duration: .day)), [])
@@ -55,7 +55,7 @@ class DictionaryDateIntervalTests: XCTestCase {
 
         XCTAssertEqual(dict[DateInterval(start: firstDate, duration: .hour)], [1])
         XCTAssertEqual(dict[DateInterval(start: secondDate, duration: .hour)], [2])
-        XCTAssertEqual(dict[DateInterval(start: firstDate, end: secondDate)].sorted(), [1,2])
+        XCTAssertEqual(dict[DateInterval(start: firstDate, end: secondDate)].sorted(), [1, 2])
 
         let laterDate = Date(timeInterval: .day, since: secondDate)
         XCTAssertEqual(dict[DateInterval(start: laterDate, duration: .day)], [])
@@ -66,17 +66,16 @@ class DictionaryDateIntervalTests: XCTestCase {
     func test_dictionaryWithDateIntervalKeys_getValuesInDateInterval() {
         let dict = [firstInterval: 1, secondInterval: 2]
 
-        XCTAssertEqual(dict.values(in: DateInterval(start: firstInterval.start, end: secondInterval.end)).sorted(), [1,2])
+        XCTAssertEqual(dict.values(in: DateInterval(start: firstInterval.start, end: secondInterval.end)).sorted(), [1, 2])
 
         let laterInterval = DateInterval(start: secondInterval.end, duration: .day)
         XCTAssertEqual(dict.values(in: laterInterval), [])
     }
 
-
     func test_dictionaryWithDateIntervalKeys_getFlatValuesInDateInterval() {
         let dict = [firstInterval: [1], secondInterval: [2]]
 
-        XCTAssertEqual(dict.flatValues(in: DateInterval(start: firstInterval.start, end: secondInterval.end)).sorted(), [1,2])
+        XCTAssertEqual(dict.flatValues(in: DateInterval(start: firstInterval.start, end: secondInterval.end)).sorted(), [1, 2])
 
         let laterInterval = DateInterval(start: secondInterval.end, duration: .day)
         XCTAssertEqual(dict.values(in: laterInterval), [])
@@ -89,7 +88,7 @@ class DictionaryDateIntervalTests: XCTestCase {
          |----- interval1 -----|
            |--- interval2 ---|
          */
-        
+
         let start1 = Date()
         let end1 = Date(timeInterval: .day, since: start1)
 

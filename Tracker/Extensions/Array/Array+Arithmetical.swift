@@ -28,7 +28,7 @@ extension Array where Element: Arithmetical {
      If list is empty it returns `nil`.
      */
     public func median() -> Element? {
-        guard count > 0
+        guard !isEmpty
             else { return nil }
         let sortedList = sorted()
         let index = count/2

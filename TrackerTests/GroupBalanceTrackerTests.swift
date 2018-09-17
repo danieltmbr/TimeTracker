@@ -1,8 +1,8 @@
 //  Copyright © 2018. danieltmbr. All rights reserved.
 //
 
-import XCTest
 @testable import Tracker
+import XCTest
 
 class GroupBalanceTrackerTests: XCTestCase {
 
@@ -20,7 +20,7 @@ class GroupBalanceTrackerTests: XCTestCase {
         let (_, _, _, tracker) = setupGroupBalanceTracker()
 
         let allSources = tracker.allSources.sorted()
-        XCTAssertEqual(allSources, [4,5,6,7,8,9].trackItems)
+        XCTAssertEqual(allSources, [4, 5, 6, 7, 8, 9].trackItems)
     }
 
     func test_dateGroup_noSourcesAreReturnedForOutOfRangeDateIntervals() {
@@ -37,28 +37,28 @@ class GroupBalanceTrackerTests: XCTestCase {
         let (_, secondDate, thirdDate, tracker) = setupGroupBalanceTracker()
 
         let intervalContainingSecondDate = DateInterval(start: Date(timeInterval: 0, since: secondDate), duration: .hour)
-        XCTAssertEqual(tracker.sources(in: intervalContainingSecondDate), [4,5,6].trackItems)
+        XCTAssertEqual(tracker.sources(in: intervalContainingSecondDate), [4, 5, 6].trackItems)
 
         let intervalContainingThirdDate = DateInterval(start: Date(timeInterval: 0, since: thirdDate), duration: .hour)
-        XCTAssertEqual(tracker.sources(in: intervalContainingThirdDate), [7,8,9].trackItems)
+        XCTAssertEqual(tracker.sources(in: intervalContainingThirdDate), [7, 8, 9].trackItems)
 
         let intervalContainingBothDates = DateInterval(start: Date(timeInterval: 0, since: secondDate), duration: .day)
-        XCTAssertEqual(tracker.sources(in: intervalContainingBothDates).sorted(), [4,5,6,7,8,9].trackItems)
+        XCTAssertEqual(tracker.sources(in: intervalContainingBothDates).sorted(), [4, 5, 6, 7, 8, 9].trackItems)
     }
 
     func test_dateGroup_balanceIsCorrectForGroup() {
         let (firstDate, secondDate, thirdDate, tracker) = setupGroupBalanceTracker()
 
         // Test balance containing only drain items
-        let firstBalance = DefaultBalance(sources: [].trackItems, drains: [1,2,3].trackItems)
+        let firstBalance = DefaultBalance(sources: [].trackItems, drains: [1, 2, 3].trackItems)
         XCTAssertEqual(tracker.balance(for: firstDate), firstBalance)
 
         // Test balance containing both source & drain items
-        let secondBalance = DefaultBalance(sources: [4,5,6].trackItems, drains: [4,5,6].trackItems)
+        let secondBalance = DefaultBalance(sources: [4, 5, 6].trackItems, drains: [4, 5, 6].trackItems)
         XCTAssertEqual(tracker.balance(for: secondDate), secondBalance)
 
         // Test balance containing only source items
-        let thirdBalance = DefaultBalance(sources: [7,8,9].trackItems, drains: [].trackItems)
+        let thirdBalance = DefaultBalance(sources: [7, 8, 9].trackItems, drains: [].trackItems)
         XCTAssertEqual(tracker.balance(for: thirdDate), thirdBalance)
 
         // Test balance for non existing group
@@ -70,15 +70,15 @@ class GroupBalanceTrackerTests: XCTestCase {
         let (firstDate, secondDate, thirdDate, tracker) = setupGroupBalanceTracker()
 
         // Test balance value containing only drain items
-        let firstBalance = DefaultBalance(sources: [].trackItems, drains: [1,2,3].trackItems)
+        let firstBalance = DefaultBalance(sources: [].trackItems, drains: [1, 2, 3].trackItems)
         XCTAssertEqual(tracker.balanceValue(for: firstDate), firstBalance.difference)
 
         // Test balance value containing both source & drain items
-        let secondBalance = DefaultBalance(sources: [4,5,6].trackItems, drains: [4,5,6].trackItems)
+        let secondBalance = DefaultBalance(sources: [4, 5, 6].trackItems, drains: [4, 5, 6].trackItems)
         XCTAssertEqual(tracker.balanceValue(for: secondDate), secondBalance.difference)
 
         // Test balance value containing only source items
-        let thirdBalance = DefaultBalance(sources: [7,8,9].trackItems, drains: [].trackItems)
+        let thirdBalance = DefaultBalance(sources: [7, 8, 9].trackItems, drains: [].trackItems)
         XCTAssertEqual(tracker.balanceValue(for: thirdDate), thirdBalance.difference)
 
         // Test balance value for non existing group
@@ -90,19 +90,19 @@ class GroupBalanceTrackerTests: XCTestCase {
         let (firstDate, secondDate, thirdDate, tracker) = setupGroupBalanceTracker()
 
         // Test balance value containing only drain items
-        let firstBalance = DefaultBalance(sources: [].trackItems, drains: [1,2,3].trackItems)
+        let firstBalance = DefaultBalance(sources: [].trackItems, drains: [1, 2, 3].trackItems)
         XCTAssertEqual(tracker.balance(in: DateInterval(start: firstDate, duration: .hour)), firstBalance)
 
         // Test balance value containing both source & drain items
-        let secondBalance = DefaultBalance(sources: [4,5,6].trackItems, drains: [4,5,6].trackItems)
+        let secondBalance = DefaultBalance(sources: [4, 5, 6].trackItems, drains: [4, 5, 6].trackItems)
         XCTAssertEqual(tracker.balance(in: DateInterval(start: secondDate, duration: .hour)), secondBalance)
 
         // Test balance value containing only source items
-        let thirdBalance = DefaultBalance(sources: [7,8,9].trackItems, drains: [].trackItems)
+        let thirdBalance = DefaultBalance(sources: [7, 8, 9].trackItems, drains: [].trackItems)
         XCTAssertEqual(tracker.balance(in: DateInterval(start: thirdDate, duration: .hour)), thirdBalance)
 
         // Test balance value for all existing group
-        let allBalance = DefaultBalance(sources: [4,5,6,7,8,9].trackItems, drains: [1,2,3,4,5,6].trackItems)
+        let allBalance = DefaultBalance(sources: [4, 5, 6, 7, 8, 9].trackItems, drains: [1, 2, 3, 4, 5, 6].trackItems)
         XCTAssertEqual(tracker.balance(in: DateInterval(start: firstDate, end: thirdDate)), allBalance)
 
         // Test balance value for invalid interval
@@ -115,19 +115,19 @@ class GroupBalanceTrackerTests: XCTestCase {
         let (firstDate, secondDate, thirdDate, tracker) = setupGroupBalanceTracker()
 
         // Test balance value containing only drain items
-        let firstBalanceValue = DefaultBalance(sources: [].trackItems, drains: [1,2,3].trackItems).difference
+        let firstBalanceValue = DefaultBalance(sources: [].trackItems, drains: [1, 2, 3].trackItems).difference
         XCTAssertEqual(tracker.balanceValue(in: DateInterval(start: firstDate, duration: .hour)), firstBalanceValue)
 
         // Test balance value containing both source & drain items
-        let secondBalanceValue = DefaultBalance(sources: [4,5,6].trackItems, drains: [4,5,6].trackItems).difference
+        let secondBalanceValue = DefaultBalance(sources: [4, 5, 6].trackItems, drains: [4, 5, 6].trackItems).difference
         XCTAssertEqual(tracker.balanceValue(in: DateInterval(start: secondDate, duration: .hour)), secondBalanceValue)
 
         // Test balance value containing only source items
-        let thirdBalanceValue = DefaultBalance(sources: [7,8,9].trackItems, drains: [].trackItems).difference
+        let thirdBalanceValue = DefaultBalance(sources: [7, 8, 9].trackItems, drains: [].trackItems).difference
         XCTAssertEqual(tracker.balanceValue(in: DateInterval(start: thirdDate, duration: .hour)), thirdBalanceValue)
 
         // Test balance value for all existing group
-        let allBalanceValue = DefaultBalance(sources: [4,5,6,7,8,9].trackItems, drains: [1,2,3,4,5,6].trackItems).difference
+        let allBalanceValue = DefaultBalance(sources: [4, 5, 6, 7, 8, 9].trackItems, drains: [1, 2, 3, 4, 5, 6].trackItems).difference
         XCTAssertEqual(tracker.balanceValue(in: DateInterval(start: firstDate, end: thirdDate)), allBalanceValue)
 
         // Test balance value for invalid interval
@@ -163,19 +163,19 @@ class GroupBalanceTrackerTests: XCTestCase {
         let (firstInterval, secondInterval, thirdInterval, tracker) = setupIntervalGroupBalanceTracker()
 
         // Test balance containing only drain items
-        let firstBalance = DefaultBalance(sources: [].trackItems, drains: [1,2,3].trackItems)
+        let firstBalance = DefaultBalance(sources: [].trackItems, drains: [1, 2, 3].trackItems)
         XCTAssertEqual(tracker.balance(in: DateInterval(start: firstInterval.start, duration: .day)), firstBalance)
 
         // Test balance containing both source & drain items
-        let secondBalance = DefaultBalance(sources: [4,5,6].trackItems, drains: [4,5,6].trackItems)
+        let secondBalance = DefaultBalance(sources: [4, 5, 6].trackItems, drains: [4, 5, 6].trackItems)
         XCTAssertEqual(tracker.balance(in: DateInterval(start: secondInterval.start, duration: .day)), secondBalance)
 
         // Test balance containing only source items
-        let thirdBalance = DefaultBalance(sources: [7,8,9].trackItems, drains: [].trackItems)
+        let thirdBalance = DefaultBalance(sources: [7, 8, 9].trackItems, drains: [].trackItems)
         XCTAssertEqual(tracker.balance(in: DateInterval(start: thirdInterval.start, duration: .day)), thirdBalance)
 
         // Test balance for all existing group
-        let allBalance = DefaultBalance(sources: [4,5,6,7,8,9].trackItems, drains: [1,2,3,4,5,6].trackItems)
+        let allBalance = DefaultBalance(sources: [4, 5, 6, 7, 8, 9].trackItems, drains: [1, 2, 3, 4, 5, 6].trackItems)
         XCTAssertEqual(tracker.balance(in: DateInterval(start: firstInterval.start, end: thirdInterval.end)), allBalance)
 
         // Test balance for invalid interval
@@ -188,19 +188,19 @@ class GroupBalanceTrackerTests: XCTestCase {
         let (firstInterval, secondInterval, thirdInterval, tracker) = setupIntervalGroupBalanceTracker()
 
         // Test balance value containing only drain items
-        let firstBalanceValue = DefaultBalance(sources: [].trackItems, drains: [1,2,3].trackItems).difference
+        let firstBalanceValue = DefaultBalance(sources: [].trackItems, drains: [1, 2, 3].trackItems).difference
         XCTAssertEqual(tracker.balanceValue(in: DateInterval(start: firstInterval.start, duration: .day)), firstBalanceValue)
 
         // Test balance value containing both source & drain items
-        let secondBalanceValue = DefaultBalance(sources: [4,5,6].trackItems, drains: [4,5,6].trackItems).difference
+        let secondBalanceValue = DefaultBalance(sources: [4, 5, 6].trackItems, drains: [4, 5, 6].trackItems).difference
         XCTAssertEqual(tracker.balanceValue(in: DateInterval(start: secondInterval.start, duration: .day)), secondBalanceValue)
 
         // Test balance value containing only source items
-        let thirdBalanceValue = DefaultBalance(sources: [7,8,9].trackItems, drains: [].trackItems).difference
+        let thirdBalanceValue = DefaultBalance(sources: [7, 8, 9].trackItems, drains: [].trackItems).difference
         XCTAssertEqual(tracker.balanceValue(in: DateInterval(start: thirdInterval.start, duration: .day)), thirdBalanceValue)
 
         // Test balance value for all existing group
-        let allBalanceValue = DefaultBalance(sources: [4,5,6,7,8,9].trackItems, drains: [1,2,3,4,5,6].trackItems).difference
+        let allBalanceValue = DefaultBalance(sources: [4, 5, 6, 7, 8, 9].trackItems, drains: [1, 2, 3, 4, 5, 6].trackItems).difference
         XCTAssertEqual(tracker.balanceValue(in: DateInterval(start: firstInterval.start, end: thirdInterval.end)), allBalanceValue)
 
         // Test balance value for invalid interval
@@ -216,12 +216,12 @@ class GroupBalanceTrackerTests: XCTestCase {
         let secondDate = Date(timeInterval: .day, since: firstDate)
         let thirdDate = Date(timeInterval: .day, since: secondDate)
         let items: [Date: [MockTrackItem]] = [
-            firstDate :  [1,2,3].trackItems,
-            secondDate :  [4,5,6].trackItems
+            firstDate: [1, 2, 3].trackItems,
+            secondDate: [4, 5, 6].trackItems
         ]
         let sources: [Date: [MockTrackItem]] = [
-            secondDate :  [4,5,6].trackItems,
-            thirdDate :  [7,8,9].trackItems
+            secondDate: [4, 5, 6].trackItems,
+            thirdDate: [7, 8, 9].trackItems
         ]
         return (firstDate, secondDate, thirdDate, MockDateGroupBalanceTracker(items: items, sources: sources))
     }
@@ -232,12 +232,12 @@ class GroupBalanceTrackerTests: XCTestCase {
         let thirdInterval = DateInterval(start: secondInterval.end, duration: .day)
 
         let items: [DateInterval: [MockTrackItem]] = [
-            firstInterval :  [1,2,3].trackItems,
-            secondInterval :  [4,5,6].trackItems
+            firstInterval: [1, 2, 3].trackItems,
+            secondInterval: [4, 5, 6].trackItems
         ]
         let sources: [DateInterval: [MockTrackItem]] = [
-            secondInterval :  [4,5,6].trackItems,
-            thirdInterval :  [7,8,9].trackItems
+            secondInterval: [4, 5, 6].trackItems,
+            thirdInterval: [7, 8, 9].trackItems
         ]
         return (firstInterval, secondInterval, thirdInterval, MockDateIntervalGroupBalanceTracker(items: items, sources: sources))
     }

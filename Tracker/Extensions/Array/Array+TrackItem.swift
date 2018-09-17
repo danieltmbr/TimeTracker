@@ -32,7 +32,7 @@ public extension Array where Element: TrackItem {
      If list is empty it returns `nil`.
      */
     public func median() -> Element.Magnitude? {
-        guard count > 0
+        guard !isEmpty
             else { return nil }
         let sortedList = sorted()
         let index = count/2
