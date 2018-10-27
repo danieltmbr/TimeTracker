@@ -25,12 +25,12 @@ Run tests on all frameworks
 ```
 fastlane ios test_unit
 ```
-Test project
+Run unit tests on TimeTracker project
 ### ios test_ui
 ```
 fastlane ios test_ui
 ```
-UI Test project
+Run UI tests on TimeTracker project
 ### ios test
 ```
 fastlane ios test
