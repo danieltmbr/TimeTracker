@@ -1,5 +1,5 @@
 clean(true)
-code_coverage
+code_coverage(true)
 device("iPhone XS")
 output_types("html")
 workspace("TimeTracker.xcworkspace")
