@@ -1,5 +1,7 @@
-app_identifier("me.tmbr.achiever") # The bundle identifier of your app
-apple_id("daniel@tmbr.me") # Your Apple email address
+# The bundle identifier of your app
+app_identifier("me.tmbr.routine")
+# Your Apple email address
+apple_id("daniel@tmbr.me")
 
 
 # For more information about the Appfile, see:

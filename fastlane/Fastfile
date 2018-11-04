@@ -41,7 +41,7 @@ platform :ios do
 
   desc "Create beta test version"
   lane :beta do
-    test
+    # test
     cert
     sigh(force: true)
     build_app(scheme: "TimeTracker",
