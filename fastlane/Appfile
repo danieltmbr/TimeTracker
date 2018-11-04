@@ -1,0 +1,8 @@
+# The bundle identifier of your app
+app_identifier("me.tmbr.routine")
+# Your Apple email address
+apple_id("daniel@tmbr.me")
+
+
+# For more information about the Appfile, see:
+#     https://docs.fastlane.tools/advanced/#appfile

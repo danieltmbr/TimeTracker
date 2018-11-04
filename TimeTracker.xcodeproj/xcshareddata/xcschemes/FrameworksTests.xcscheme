@@ -10,27 +10,27 @@
             buildForTesting = "YES"
             buildForRunning = "YES"
             buildForProfiling = "YES"
-            buildForArchiving = "YES"
+            buildForArchiving = "NO"
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E26F85852116599F00071F30"
-               BuildableName = "TimeTracker.app"
-               BlueprintName = "TimeTracker"
+               BlueprintIdentifier = "E23ED97921165F9E00375059"
+               BuildableName = "Tracker.framework"
+               BlueprintName = "Tracker"
                ReferencedContainer = "container:TimeTracker.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
-            buildForTesting = "NO"
+            buildForTesting = "YES"
             buildForRunning = "NO"
             buildForProfiling = "NO"
             buildForArchiving = "NO"
             buildForAnalyzing = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E26F85A4211659A200071F30"
-               BuildableName = "TimeTrackerUITests.xctest"
-               BlueprintName = "TimeTrackerUITests"
+               BlueprintIdentifier = "E23ED98121165F9F00375059"
+               BuildableName = "TrackerTests.xctest"
+               BlueprintName = "TrackerTests"
                ReferencedContainer = "container:TimeTracker.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -46,9 +46,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E26F8599211659A200071F30"
-               BuildableName = "TimeTrackerTests.xctest"
-               BlueprintName = "TimeTrackerTests"
+               BlueprintIdentifier = "E23ED98121165F9F00375059"
+               BuildableName = "TrackerTests.xctest"
+               BlueprintName = "TrackerTests"
                ReferencedContainer = "container:TimeTracker.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -56,9 +56,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E26F85852116599F00071F30"
-            BuildableName = "TimeTracker.app"
-            BlueprintName = "TimeTracker"
+            BlueprintIdentifier = "E23ED97921165F9E00375059"
+            BuildableName = "Tracker.framework"
+            BlueprintName = "Tracker"
             ReferencedContainer = "container:TimeTracker.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -77,16 +77,15 @@
       stopOnEveryMainThreadCheckerIssue = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E26F85852116599F00071F30"
-            BuildableName = "TimeTracker.app"
-            BlueprintName = "TimeTracker"
+            BlueprintIdentifier = "E23ED97921165F9E00375059"
+            BuildableName = "Tracker.framework"
+            BlueprintName = "Tracker"
             ReferencedContainer = "container:TimeTracker.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -96,16 +95,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E26F85852116599F00071F30"
-            BuildableName = "TimeTracker.app"
-            BlueprintName = "TimeTracker"
+            BlueprintIdentifier = "E23ED97921165F9E00375059"
+            BuildableName = "Tracker.framework"
+            BlueprintName = "Tracker"
             ReferencedContainer = "container:TimeTracker.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
